@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Zestaw znaków UTF-8 (kodowanie dla dokumentu)-->
+    <meta charset="utf-8" />
+    <!--Tytuł dokumentu, który jest wyświetlany na pasku tytułu przeglądarki-->
+    <title>Counter-Strike: Global Offensive</title>
+    <!--Podłączenie do strony arkusza stylów css z platformy Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Podłączenie do strony arkusza stylów css-->
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Nagłówek strony-->
+    <header>
+        <!--Kontener z paskiem nawigacyjnym-->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <!--Logo i napis gry w pasku nawigacyjnym-->
+            <a class="navbar-logogame"><img src="Images/cs_go_icon.png" width="50" height="50" class="d-inline-block align-center mr-1" alt="logo cs-go">Counter-Strike: Global Offensive</a>
+            <!--Przełącznik nawigacyjny w pasku nawigacyjnym-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <!--Ikona przełącznika-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Kontener zawierający listę zakładek w pasku nawigacyjnym-->
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <!--Lista nienumerowana zakładek-->
+                <ul class="nav navbar-nav">
+                    <!--Element listy - zakładka Start - zaznaczona domyślnie po otwarciu strony-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainPage.html">Start</a>
+                    </li>
+                    <!--Element listy - zakładka Rozgrywka-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="GameDescription.html">Rozgrywka</a>
+                    </li>
+                    <!--Element listy - zakładka Dostępna broń-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="#">Dostępna broń</a>
+                    </li>-->
+                    <!--Element listy - zakładka Mapy turniejowe-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="TournamentMap.html">Mapy turniejowe</a>
+                    </li>
+                    <!--Element listy - zakładka Rangi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ranks.html">Rangi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Kontener zawierający napis tryby gry, opis rozgrywki, napis zasady gry, opis trybów gry, napis z wybraną stroną konfliktu, opis sposóbów na wygraną rozgrywki dla konkretnej strony konfliktu, komentarze, przyciski wykonujące alerty, grafikę dla wybranej strony konfliktu-->
+    <div class="container-fluid">
+        <!--Kontener mieszczący jeden rząd elementów-->
+        <div class="row">
+            <!--Kontener zawierający napis tryby gry oraz opis trybów gry-->
+            <div class="col-lg-4 mx-2 mt-2">
+                <div class="form-group mt-4">
+                    <h4 id="game-modes">Tryby gry:</h4>
+                </div>
+                <div class="form-group">
+                    <p>W Counter-Strike: Global Offensive mamy kilka trybów gry. Są to między innymi: mecze turniejowe (5 vs 5), mecze uproszczone (10 vs 10), klasyczny deathmatch, wyścig zbrojeń oraz demolka. Z perspektywy gracza, który dopiero zaczyna swoją przygodę z CS-em najważniejsze są na początku dwa tryby: mecz uproszczony oraz deathmatch. Oba pozwalają zapoznać się z mechanizmem gry i zdobyć 2 poziom doświadczenia, który jest wymagany do grania meczów turniejowych.</p>
+                    <p>Gdy gracz już osiągnie 2 poziom doświadczenia (wcześniej był to 3 poziom, ale niedawno zmniejszono wymagania), może zacząć grać mecze turniejowe, czyli te najciekawsze i najważniejsze. W meczach turniejowych gracze są dopasowywani na podstawie rangi. Początkowo nikt jej nie ma. Trzeba najpierw wygrać (wygrać, a nie zagrać) 10 meczów turniejowych, aby gra przydzieliła nam rangę. W sumie jest ich aż 18 - od Silver I aż do Global Elite. Po pierwszych 10 wygranych meczach nie ma szansy dostać od razu najwyższej rangi, ale przy bardzo dobrej grze można wskoczyć od razu na 7-9.</p>
+                    <p>Ranga nie jest przydzielana na stałe. Dzięki dobrej grze możemy awansować na wyższy poziom. Z kolei słaba gra i wiele przegranych to pewny spadek. Tak naprawdę nie wiadomo, na czym dokładnie opiera się system rankingowy w CS:GO. Na pewno liczą się wygrane i zremisowane mecze, nagrody MVP za poszczególne rundy oraz to, przeciwko komu gramy. Wygrana z osobami z wyższą rangą ma większe znaczenie niż wygrana z graczami o takiej samej randze lub niższej. W praktyce trudno przewidzieć, kiedy awansujemy, a kiedy spadniemy. Czasami wygrana nawet kilku meczów z rzędu nie da nam awansu, a innym razem przegranie 3-4 meczów oznacza spadek. Ranga ELO każdego gracza, na której opiera się system, nie jest widoczna.</p>
+                </div>
+            </div>
+            <!--Kontener zawierający napis zasady gry, opis trybów gry, napis z wybraną stroną konfliktu, opis sposobów na wygraną rozgrywki dla konkretnej strony konfliktu, komentarze, przyciski wykonujące alerty, grafikę dla wybranej strony konfliktu-->
+            <div class="col-lg-4 mx-4 mt-2">
+                <div class="form-group mt-4">
+                    <h4 id="game-modes">Zasady gry:</h4>
+                </div>
+                <div class="form-group">
+                    <p>Po osiągnięciu 2 poziomu doświadczenia powinniśmy grać przede wszystkim mecze turniejowe. W grze bierze udział w sumie 10 graczy. Mecz składa się z maksymalnie 30 rund. Wygrywa ta drużyna, która jako pierwsza wygra 16 rund. Oznacza to, że każde spotkanie może skończyć się wynikiem od 16:0 do 16:14, a także remisem 15:15. Zawodnicy dzieleni są na dwie drużyny - terrorystów i antyterrorystów. Po 15 rundach następuje zmiana stron i terroryści zostaną antyterrorystami i na odwrót.</p>
+                </div>
+                <div class="form-group">
+                    <h4 id="selected-conflict-side"></h4>
+                </div>
+                <div class="form-group">
+                    <p id="selected-conflict-description"></p>
+                </div>
+                <div class="form-group text-center">
+                    <p id="comment-defuse-plant"></p>
+                    <button id="defuse-plant-button"></button>
+                    <p id="comment-defuse"></p>
+                    <button id="defuse-button"></button>
+                </div>
+            </div>
+            <!--Kontener zawierający grafikę dla wybranej strony konfliktu-->
+            <div class="col-lg-3 mx-4 mt-2">
+                <div class="form-group mt-4">
+                    <img id="selected-conflict-side-image" src="" alt="Wybrana strona konfliktu" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Podłączenie do strony skryptu jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony skryptu JavaScript z platformy Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony arkusza skryptu js-->
+    <script src="scripts/script2.js"></script>
+</body>
+</html>

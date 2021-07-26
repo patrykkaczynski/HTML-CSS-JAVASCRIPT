@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Zestaw znaków UTF-8 (kodowanie dla dokumentu)-->
+    <meta charset="utf-8" />
+    <!--Tytuł dokumentu, który jest wyświetlany na pasku tytułu przeglądarki-->
+    <title>Counter-Strike: Global Offensive</title>
+    <!--Podłączenie do strony arkusza stylów css z platformy Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Podłączenie do strony arkusza stylów css-->
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Nagłówek strony-->
+    <header>
+        <!--Kontener z paskiem nawigacyjnym-->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <!--Logo i napis gry w pasku nawigacyjnym-->
+            <a class="navbar-logogame"><img src="Images/cs_go_icon.png" width="50" height="50" class="d-inline-block align-center mr-1" alt="logo cs-go">Counter-Strike: Global Offensive</a>
+            <!--Przełącznik nawigacyjny w pasku nawigacyjnym-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <!--Ikona przełącznika-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Kontener zawierający listę zakładek w pasku nawigacyjnym-->
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <!--Lista nienumerowana zakładek-->
+                <ul class="nav navbar-nav">
+                    <!--Element listy - zakładka Start - zaznaczona domyślnie po otwarciu strony-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainPage.html">Start</a>
+                    </li>
+                    <!--Element listy - zakładka Rozgrywka-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="GameDescription.html">Rozgrywka</a>
+                    </li>
+                    <!--Element listy - zakładka Dostępna broń-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="#">Dostępna broń</a>
+                    </li>-->
+                    <!--Element listy - zakładka Mapy turniejowe-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="TournamentMap.html">Mapy turniejowe</a>
+                    </li>
+                    <!--Element listy - zakładka Rangi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ranks.html">Rangi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Kontener zawierający napis wybranej mapy, grafikę wybranej mapy oraz jej plan-->
+    <div class="container-fluid">
+        <!--Kontener mieszczący jeden rząd elementów-->
+        <div class="row">
+            <!--Kontener zaeierający napis wybranej mapy, grafikę dla wybranej mapy, napis opis mapy, opis wybranej mapy-->
+            <div class="col-lg-4 mx-2 mt-2">
+                <!--Kontener zawierający napis z wybraną mapą-->
+                <div class="form-group mt-4">
+                    <h4 id="selected-map-name"></h4>
+                </div>
+                <!--Kontener zawierający grafikę z wybraną mapą-->
+                <div class="form-group">
+                    <img id="selected-image-map" src="Images/Maps/agency.jpg" class="img-thumbnail rounded mx-auto d-block" alt="Wybrana mapa turniejowa" />
+                </div>
+                <!--Kontener zawierający napis opis mapy-->
+                <div class="form-group mt-4">
+                    <h4 id="map-description-label">Opis mapy: </h4>
+                </div>
+                <!--Kontener zawierający opis wybranej mapy-->
+                <div class="form-group mt-4">
+                    <p id="selected-map-description">Agency jest to mapa typu "Uprowadzenie", która została dodana do gry w dniu 19 września 2013 roku jako część operacji Bravo. Była także dostępna podczas operacji Phoenix, Bloodhound oraz Hydra. Została zrobiona przez Puddy'ego oraz rck. Konflikt odbywa się w komercyjnym penthousie na szczycie wysokiego miejskiego wieżowca. Wraz z zakończeniem operacji Hydra mapa Agency została oficjalnie dodana do gry!</p>
+                </div>
+            </div>
+            <!--Kontener zawierający napis plan mapy, grafikę planu mapy-->
+            <div class="col-lg-4 mx-4 mt-2">
+                <!--Kontener zawierający napis plan mapy-->
+                <div class="form-group mt-4">
+                    <h4 id="map-plan">Plan mapy:</h4>
+                </div>
+                <!--Kontener zawierający grafikę dla wybranej mapy-->
+                <div class="form-group">
+                    <img id="selected-map-radar" src="" class="img-thumbnail rounded mx-auto d-block" alt="Plan wybranej mapy" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Podłączenie do strony skryptu jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony skryptu JavaScript z platformy Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony arkusza skryptu js-->
+    <script src="scripts/script.js"></script>
+</body>
+</html>

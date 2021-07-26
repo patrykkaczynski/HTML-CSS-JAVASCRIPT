@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--Zestaw znaków UTF-8 (kodowanie dla dokumentu)-->
+    <meta charset="utf-8" />
+    <!--Tytuł dokumentu, który jest wyświetlany na pasku tytułu przeglądarki-->
+    <title>Counter-Strike: Global Offensive</title>
+    <!--Podłączenie do strony arkusza stylów css z platformy Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Podłączenie do strony arkusza stylów css-->
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--Nagłówek strony-->
+    <header>
+        <!--Kontener z paskiem nawigacyjnym-->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <!--Logo i napis gry w pasku nawigacyjnym-->
+            <a class="navbar-logogame"><img src="Images/cs_go_icon.png" width="50" height="50" class="d-inline-block align-center mr-1" alt="logo cs-go">Counter-Strike: Global Offensive</a>
+            <!--Przełącznik nawigacyjny w pasku nawigacyjnym-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <!--Ikona przełącznika-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Kontener zawierający listę zakładek w pasku nawigacyjnym-->
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <!--Lista nienumerowana zakładek-->
+                <ul class="nav navbar-nav">
+                    <!--Element listy - zakładka Start - zaznaczona domyślnie po otwarciu strony-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="MainPage.html">Start</a>
+                    </li>
+                    <!--Element listy - zakładka Rozgrywka-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="GameDescription.html">Rozgrywka</a>
+                    </li>
+                    <!--Element listy - zakładka Dostępna broń-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="#">Dostępna broń</a>
+                    </li>-->
+                    <!--Element listy - zakładka Mapy turniejowe-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="TournamentMap.html">Mapy turniejowe</a>
+                    </li>
+                    <!--Element listy - zakładka Rangi-->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Ranks.html">Rangi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Kontener zawierający napis wybranej rangi, grafikę wybranej rangi oraz procentowego podziału rang-->
+    <div class="container-fluid">
+        <!--Kontener mieszczący jeden rząd elementów-->
+        <div class="row">
+            <!--rank-->
+            <div class="col-lg-4 mx-2 mt-2">
+                <!--Kontener zawierający napis z wybraną rangą-->
+                <div class="form-group mt-4">
+                    <h4 id="selected-rank-name">Srebro I</h4>
+                </div>
+                <!--Kontener zawierający grafikę z wybraną rangą-->
+                <div class="form-group">
+                    <img id="selected-image-rank" src="Images/Ranks/1.png" class="rounded mx-auto d-block" alt="Wybrana ranga" />
+                </div>
+                <!--Kontener zawierający napis inforamcje o systemie rangowym-->
+                <div class="form-group mt-4">
+                    <h4 id="rank-description-label">Informacje o systemie rangowym: </h4>
+                </div>
+                <!--Kontener zawierający opis systemu rangowego-->
+                <div class="form-group mt-4">
+                    <p id="rank-description">Rangi CS GO to jeden ze sposobów, w jaki można zweryfikować swoje umiejętności względem pozostałych graczy Counter-Strike: Global Offensive na świecie. Aby móc rywalizować z pozostałymi zawodnikami w systemie turniejowym, trzeba osiągnąć drugi poziom doświadczenia. Wówczas otrzymujecie możliwość korzystania z gier rankingowych. W grze Counter-Strike: Global Offensive mamy 18 rang, które definiują nasze umiejętności w grze.</p>
+                    <p>Początkujący nie ma łatwej drogi na szczyt. Aby zdobyć pierwsze odznaczenie, gracz musi rozegrać dziesięć gier rankingowych. Wówczas system zdefiniuje umiejętności gracza i przypisze mu odpowiednią rangę. Zadanie wydaje się banalne, jednak w praktyce takie nie jest. Nawet jeżeli zawodnik zwycięży wszystkie 10, nie oznacza to, że od razu trafi do Elity. System uwzględnia wiele czynników tj. liczba zabójstw, długość życia w rundzie, liczba podłożonych ładunków itp.</p>
+                    <p>Najniższą rangą jest Srebro I, natomiast najlepsi mogą się poszczycić Elitą Światową. W sumie mamy aż 18 rang. Każda gra ma wpływ na ocenę. Możemy awansować na wyższy stopień, lub gdy prezentujemy się nieco słabiej, spaść poziom niżej. Warto pamiętać, że CS GO to gra drużynowa i teoretycznie nawet jeśli będziemy wyraźnie odstawać umiejętnościami od swoich kolegów, liczy się wynik drużynowy. Jeżeli będziemy przegrywać, nasz awans na wyższą rangę znacząco się oddali.</p>
+                    <p>Awans nie jest prostą sprawą, albowiem algorytm Valve jest ukryty i nigdy do końca nie możemy być pewni, kiedy awansujemy. Na pewno seria zwycięstw będzie tutaj bardzo ważna. Pewne jest również, że im większy mamy stosunek zwycięskich rund do przegranych, tym łatwiej jest nam awansować.</p>
+                    <p></p>
+                </div>
+            </div>
+            <!--Kontener zawierający napis procentowy podział rang, grafikę procentowego podziału rang-->
+            <div class="col-lg-4 mx-4 mt-2">
+                <!--Kontener zawierający napis procentowy podział rang-->
+                <div class="form-group mt-4">
+                    <h4 id="map-plan">Procentowy podział rang:</h4>
+                </div>
+                <!--Kontener zawierający grafikę dla procentowego podziału rang-->
+                <div class="form-group">
+                    <img id="ranks-image" src="Images/Ranks/ranks_statistics.png" class="img-thumbnail rounded mx-auto d-block" alt="Procentowy podział rang" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Podłączenie do strony skryptu jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony skryptu JavaScript z platformy Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony arkusza skryptu js-->
+    <script src="scripts/script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!--Dane o stronie-->
+<head>
+    <!--Zestaw znaków UTF-8 (kodowanie dla dokumentu)-->
+    <meta charset="utf-8" />
+    <!--Tytuł dokumentu, który jest wyświetlany na pasku tytułu przeglądarki-->
+    <title>Counter-Strike: Global Offensive</title>
+    <!--Podłączenie do strony arkusza stylów css z platformy Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Podłączenie do strony arkusza stylów css-->
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--Wygląd strony-->
+<body>
+    <!--Nagłówek strony-->
+    <header>
+        <!--Kontener z paskiem nawigacyjnym-->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <!--Logo i napis gry w pasku nawigacyjnym-->
+            <a class="navbar-logogame"><img src="Images/cs_go_icon.png" width="50" height="50" class="d-inline-block align-center mr-1" alt="logo cs-go">Counter-Strike: Global Offensive</a>
+            <!--Przełącznik nawigacyjny w pasku nawigacyjnym-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <!--Ikona przełącznika-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Kontener zawierający listę zakładek w pasku nawigacyjnym-->
+            <div class="collapse navbar-collapse justify-content-end" id="mainmenu">
+                <!--Lista nienumerowana zakładek-->
+                <ul class="nav navbar-nav">
+                    <!--Element listy - zakładka Start - zaznaczona domyślnie po otwarciu strony-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="MainPage.html">Start</a>
+                    </li>
+                    <!--Element listy - zakładka Rozgrywka-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="GameDescription.html">Rozgrywka</a>
+                    </li>
+                    <!--Element listy - zakładka Dostępna broń-->
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="#"> Dostępna broń </a>
+                    </li>-->
+                    <!--Element listy - zakładka Mapy turniejowe-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="TournamentMap.html">Mapy turniejowe</a>
+                    </li>
+                    <!--Element listy - zakładka Rangi-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ranks.html">Rangi</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Kontener strony startowej z opcjami wybieralnymi i grafiką-->
+    <div class="container-fluid">
+        <!--Kontener mieszczący jeden rząd elementów-->
+        <div class="row">
+            <!--Kontener zawierający opcje dla czasu, nicku, rangi i mapy turniejowej-->
+            <div class="col-lg-4 mx-2 mt-2">
+                <!--Kontener zawierający napis i textbox dla nicku-->
+                <div class="form-group">
+                    <!--Kontener zawierająca czas, napis i textbox dla nicku-->
+                    <h6 id="time"></h6>
+                    <label for="nick">Twój nick</label>
+                    <input type="text" class="form-control" id="nick" placeholder="Nick">
+                </div>
+                <!--Kontener zawierający napis i dropdown dla rangi-->
+                <div class="form-group">
+                    <label for="rank">Twoja ranga</label>
+                    <select class="form-control" id="rank">
+                        <option>Srebro I</option>
+                        <option>Srebro II</option>
+                        <option>Srebro III</option>
+                        <option>Srebro IV</option>
+                        <option>Elitarne srebro</option>
+                        <option>Mistrzowskie elitarne srebro</option>
+                        <option>Złoty laur I</option>
+                        <option>Złoty laur II</option>
+                        <option>Złoty laur III</option>
+                        <option>Mistrzowski złoty laur</option>
+                        <option>Mistrzowski obrońca I</option>
+                        <option>Mistrzowski obrońca II</option>
+                        <option>Elitarny mistrzowski obrońca</option>
+                        <option>Wybitny mistrzowski obrońca</option>
+                        <option>Legendarny orzeł</option>
+                        <option>Mistrzowski legendarny orzeł</option>
+                        <option>Mistrzowska pierwsza klasa</option>
+                        <option>Elita światowa</option>
+                    </select>
+                </div>
+                <!--Kontener zawierający grafikę dla rangi-->
+                <div class="form-group mt-4">
+                    <img id="image-rank" src="Images/Ranks/1.png" class="rounded mx-auto d-block" alt="Wybrana ranga" />
+                </div>
+                <!--Kontener zawierający napis i dropdown dla mapy turniejowej-->
+                <div class="form-group">
+                    <label for="tournament-map">Wybierz twoją ulubiona mapę turniejową</label>
+                    <select class="form-control" id="tournament-map">
+                        <option>Agency</option>
+                        <option>Ancient</option>
+                        <option>Cache</option>
+                        <option>Dust 2</option>
+                        <option>Inferno</option>
+                        <option>Mirage</option>
+                        <option>Nuke</option>
+                        <option>Office</option>
+                        <option>Overpass</option>
+                        <option>Train</option>
+                        <option>Vertigo</option>
+                    </select>
+                </div>
+                <!--Kontener zawierający grafikę dla mapy turniejowej-->
+                <div class="form-group mt-4">
+                    <img id="image-map" src="Images/Maps/agency.jpg" class="img-thumbnail rounded mx-auto d-block" alt="Wybrana mapa turniejowa" />
+                </div>
+            </div>
+            <!--Kontener zawierający opcje dla strony konfliktu, wyboru typu broni, grafikę dla wybranego typu broni-->
+            <div class="col-lg-4 mx-2 mt-4">
+                <!--Kontener zawierający opcję do wyboru strony konfliktu-->
+                <div class="form-group">
+                    <h6></h6>
+                    <label for="conflict-side">Wybierz ulubioną stronę konfliktu</label>
+                    <select class="form-control" id="conflict-side">
+                        <option selected>Wybierz stronę konfliktu</option>
+                        <option data-ref="AT">Antyterroryści</option>
+                        <option data-ref="TT">Terroryści</option>
+                    </select>
+                </div>
+                <!--Kontener zawierający opcję do wyboru typu broni i grafikę-->
+                <div class="form-group">
+                    <label for="weapon-type">Wybierz ulubiony typ broni</label>
+                    <select class="form-control" id="weapon-type">
+                        <option>AK-47</option>
+                        <option>AUG</option>
+                        <option>AWP</option>
+                        <option>CZ75-Auto</option>
+                        <option>Desert Eagle</option>
+                        <option>Dwie Beretty</option>
+                        <option>FAMAS</option>
+                        <option>Five-SeveN</option>
+                        <option>G3SG1</option>
+                        <option>Galil AR</option>
+                        <option>Glock-18</option>
+                        <option>Granat błyskowo-hukowy</option>
+                        <option>Granat dymny</option>
+                        <option>Granat zaczepny</option>
+                        <option>Koktajl Mołotowa</option>
+                        <option>M249</option>
+                        <option>M4A1-S</option>
+                        <option>M4A4</option>
+                        <option>MAC-10</option>
+                        <option>MAG-7</option>
+                        <option>MP5-SD</option>
+                        <option>MP7</option>
+                        <option>MP9</option>
+                        <option>Negev</option>
+                        <option>Nova</option>
+                        <option>Obrzyn</option>
+                        <option>P2000</option>
+                        <option>P250</option>
+                        <option>P90</option>
+                        <option>PP-Bizon</option>
+                        <option>Rewolwer R8</option>
+                        <option>SCAR-20</option>
+                        <option>SG 553</option>
+                        <option>SSG 08</option>
+                        <option>Tec-9</option>
+                        <option>UMP-45</option>
+                        <option>USP-S</option>
+                        <option>Wabik</option>
+                        <option>XM1014</option>
+                        <option>Zeus x27</option>
+                    </select>
+                    <div class="mt-4">
+                        <img id="image-weapon-type" src="Images/Weapon/AK-47.png" class="rounded mx-auto d-block" alt="Wybrana broń" />
+                    </div>
+                </div>
+            </div>
+            <!--Kontener zawierający grafikę dla strony konfliktu-->
+            <div class="col-lg-3 mx-4 mt-2">
+                <div class="form-group">
+                    <img id="image-conflict-side" src="Images/Conflict sides/antyterrorysta.png" class="rounded mx-auto d-block" alt="Wybrana strona konfliktu"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Podłączenie do strony skryptu jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony skryptu JavaScript z platformy Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Podłączenie do strony arkusza skryptu js-->
+    <script src="scripts/script.js"></script>
+</body>
+</html> 

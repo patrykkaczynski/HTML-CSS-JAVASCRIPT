@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E392BBB-EB76-403F-AA1A-F4495F9BEF2F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PatrykKaczynskiLab3ZadDom</RootNamespace>
+    <AssemblyName>PatrykKaczynskiLab3ZadDom</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameDescription.html" />
+    <Content Include="Images\Conflict sides\antyterrorysta.png" />
+    <Content Include="Images\Conflict sides\terrorysta.png" />
+    <Content Include="Images\csgoBackground.jpg" />
+    <Content Include="Images\cs_go_icon.png" />
+    <Content Include="Images\cs_go_logo.png" />
+    <Content Include="Images\Maps\agency.jpg" />
+    <Content Include="Images\Maps\ancient.jpeg" />
+    <Content Include="Images\Maps\cache.jpg" />
+    <Content Include="Images\Maps\dust2.jpg" />
+    <Content Include="Images\Maps\inferno.jpg" />
+    <Content Include="Images\Maps\mirage.jpg" />
+    <Content Include="Images\Maps\nuke.jpg" />
+    <Content Include="Images\Maps\office.jpg" />
+    <Content Include="Images\Maps\overpass.jpg" />
+    <Content Include="Images\Maps\train.jpg" />
+    <Content Include="Images\Maps\vertigo.jpg" />
+    <Content Include="Images\Maps_radar\agency_radar.jpg" />
+    <Content Include="Images\Maps_radar\ancient_radar.jpg" />
+    <Content Include="Images\Maps_radar\cache_radar.jpg" />
+    <Content Include="Images\Maps_radar\dust2_radar.jpg" />
+    <Content Include="Images\Maps_radar\inferno_radar.jpg" />
+    <Content Include="Images\Maps_radar\mirage_radar.jpg" />
+    <Content Include="Images\Maps_radar\nuke_radar.jpg" />
+    <Content Include="Images\Maps_radar\office_radar.png" />
+    <Content Include="Images\Maps_radar\overpass_radar.jpg" />
+    <Content Include="Images\Maps_radar\train_radar.jpg" />
+    <Content Include="Images\Maps_radar\vertigo_radar.png" />
+    <Content Include="Images\Ranks\1.png" />
+    <Content Include="Images\Ranks\10.png" />
+    <Content Include="Images\Ranks\11.png" />
+    <Content Include="Images\Ranks\12.png" />
+    <Content Include="Images\Ranks\13.png" />
+    <Content Include="Images\Ranks\14.png" />
+    <Content Include="Images\Ranks\15.png" />
+    <Content Include="Images\Ranks\16.png" />
+    <Content Include="Images\Ranks\17.png" />
+    <Content Include="Images\Ranks\18.png" />
+    <Content Include="Images\Ranks\2.png" />
+    <Content Include="Images\Ranks\3.png" />
+    <Content Include="Images\Ranks\4.png" />
+    <Content Include="Images\Ranks\5.png" />
+    <Content Include="Images\Ranks\6.png" />
+    <Content Include="Images\Ranks\7.png" />
+    <Content Include="Images\Ranks\8.png" />
+    <Content Include="Images\Ranks\9.png" />
+    <Content Include="Images\Ranks\ranks_statistics.png" />
+    <Content Include="Images\Weapon\AK-47.png" />
+    <Content Include="Images\Weapon\AUG.png" />
+    <Content Include="Images\Weapon\AWP.png" />
+    <Content Include="Images\Weapon\CZ75-Auto.png" />
+    <Content Include="Images\Weapon\Desert_Eagle.png" />
+    <Content Include="Images\Weapon\Dwie_Beretty.png" />
+    <Content Include="Images\Weapon\FAMAS.png" />
+    <Content Include="Images\Weapon\Five-SeveN.png" />
+    <Content Include="Images\Weapon\G3SG1.png" />
+    <Content Include="Images\Weapon\Galil_AR.png" />
+    <Content Include="Images\Weapon\Glock-18.png" />
+    <Content Include="Images\Weapon\Granat_blyskowo-hukowy.png" />
+    <Content Include="Images\Weapon\Granat_dymny.png" />
+    <Content Include="Images\Weapon\Granat_zaczepny.png" />
+    <Content Include="Images\Weapon\Koktajl_molotowa.png" />
+    <Content Include="Images\Weapon\M249.png" />
+    <Content Include="Images\Weapon\M4A1-S.png" />
+    <Content Include="Images\Weapon\M4A4.png" />
+    <Content Include="Images\Weapon\MAC-10.png" />
+    <Content Include="Images\Weapon\MAG-7.png" />
+    <Content Include="Images\Weapon\MP5-SD.png" />
+    <Content Include="Images\Weapon\MP7.png" />
+    <Content Include="Images\Weapon\MP9.png" />
+    <Content Include="Images\Weapon\Negev.png" />
+    <Content Include="Images\Weapon\Nova.png" />
+    <Content Include="Images\Weapon\Obrzyn.png" />
+    <Content Include="Images\Weapon\P2000.png" />
+    <Content Include="Images\Weapon\P250.png" />
+    <Content Include="Images\Weapon\P90.png" />
+    <Content Include="Images\Weapon\PP-Bizon.png" />
+    <Content Include="Images\Weapon\R8_Revolver.png" />
+    <Content Include="Images\Weapon\SCAR-20.png" />
+    <Content Include="Images\Weapon\SG_553.png" />
+    <Content Include="Images\Weapon\SSG_08.png" />
+    <Content Include="Images\Weapon\Tec-9.png" />
+    <Content Include="Images\Weapon\UMP-45.png" />
+    <Content Include="Images\Weapon\USP-S.png" />
+    <Content Include="Images\Weapon\Wabik.png" />
+    <Content Include="Images\Weapon\XM1014.png" />
+    <Content Include="Images\Weapon\Zeus_x27.png" />
+    <Content Include="MainPage.html" />
+    <Content Include="Ranks.html" />
+    <Content Include="scripts\script.js" />
+    <Content Include="scripts\script1.js" />
+    <Content Include="scripts\script2.js" />
+    <Content Include="Styles\style.css" />
+    <Content Include="TournamentMap.html" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
