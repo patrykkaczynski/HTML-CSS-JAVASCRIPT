@@ -1,4 +1,4 @@
-# Magic Barrier - Gothic game/simulator
+# Counter-Strike: Global Offensive - Website
 
 
 ## Table of Contents
